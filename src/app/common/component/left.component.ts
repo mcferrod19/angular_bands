@@ -4,7 +4,7 @@ import {Component} from '@angular/core';
   selector: 'app-left-navigation',
   templateUrl: './left.component.html',
   styleUrls: [
-    './left.component.css'
+    './left.component.scss'
   ]
 
 })
