@@ -8,7 +8,6 @@ import { FooterComponent } from './common/footer/footer.component';
 import { LeftComponent } from './common/component/left.component';
 
 
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { FooComponent } from './foo/foo.component';
 import { BarComponent } from './bar/bar.component';
@@ -17,7 +16,7 @@ import { TheBeatlesComponent } from './the-beatles/the-beatles.component';
 import { QueenComponent } from './queen/queen.component';
 
 const appRoutes: Routes = [
-  {path: 'dashboard', component: DashboardComponent},
+
   {path: '', component: HomeComponent},
   {path: 'bar', component: BarComponent},
   {path: 'foo', component: FooComponent},
@@ -34,7 +33,7 @@ const appRoutes: Routes = [
     FooterComponent,
     LeftComponent,
 
-    DashboardComponent,
+
     HomeComponent,
     FooComponent,
     BarComponent,
