@@ -1,16 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { LeftComponent } from './common/component/left.component';
 
-import { BarPage } from './pages/bar/bar';
-import { FooPage } from './pages/foo/foo';
-import { QueenPage } from './pages/queen/queen';
-import { TheBeatlesPage } from './pages/the-beatles/the-beatles';
-import { TheRollingStonesPage } from './pages/the-rolling-stones/the-rolling-stones';
+
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+
+const appRoutes: Routes = [
+  {
+    path: 'dashboard', //localhost/dashboard
+    component: DashboardComponent
+  },
+
+  {
+    path: '',
+    component: HomeComponent
+  },
+
+];
 
 @NgModule({
   declarations: [
@@ -19,14 +31,12 @@ import { TheRollingStonesPage } from './pages/the-rolling-stones/the-rolling-sto
     FooterComponent,
     LeftComponent,
 
-    BarPage,
-    FooPage,
-    QueenPage,
-    TheBeatlesPage,
-    TheRollingStonesPage
+    DashboardComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
