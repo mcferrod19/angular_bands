@@ -10,17 +10,20 @@ import { LeftComponent } from './common/component/left.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import { FooComponent } from './foo/foo.component';
+import { BarComponent } from './bar/bar.component';
+import { TheRollingStonesComponent } from './the-rolling-stones/the-rolling-stones.component';
+import { TheBeatlesComponent } from './the-beatles/the-beatles.component';
+import { QueenComponent } from './queen/queen.component';
 
 const appRoutes: Routes = [
-  {
-    path: 'dashboard', //localhost/dashboard
-    component: DashboardComponent
-  },
-
-  {
-    path: '',
-    component: HomeComponent
-  },
+  {path: 'dashboard', component: DashboardComponent},
+  {path: '', component: HomeComponent},
+  {path: 'bar', component: BarComponent},
+  {path: 'foo', component: FooComponent},
+  {path: 'the-rolling-stones', component: TheRollingStonesComponent},
+  {path: 'the-beatles', component: TheBeatlesComponent },
+  {path: 'queen', component: QueenComponent},
 
 ];
 
@@ -32,7 +35,12 @@ const appRoutes: Routes = [
     LeftComponent,
 
     DashboardComponent,
-    HomeComponent
+    HomeComponent,
+    FooComponent,
+    BarComponent,
+    TheRollingStonesComponent,
+    TheBeatlesComponent,
+    QueenComponent
   ],
   imports: [
     BrowserModule,
