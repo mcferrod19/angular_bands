@@ -1,41 +1,45 @@
-body{
+a {
+  color: black;
+}
+
+.color {
+  color: #A51F26;
+}
+
+body {
   background-image: url('http://www.slate.com/content/dam/slate/articles/arts/music_box/2016/05/160506_MUSIC_rolling-stones-1965.jpg.CROP.promo-xlarge2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 100vh;
+  height: 70em;
 }
-.video{
-  box-shadow: -4px 5px 29px 16px rgba(0,0,0,0.86);
-  opacity: 0.8;
+
+.video {
+  box-shadow: -4px 5px 29px 16px rgba(0, 0, 0, 0.86);
   display: flex;
   margin-left: auto;
   margin-right: auto;
-}
-.line-container{
-  margin-left: 9%;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  padding-left: 0;
-  height: 100px;
-  z-index: 1000;
-
-}
-img{
-  box-shadow: -4px 5px 29px 16px rgba(0,0,0,0.86);  border-color: black;
-  height: 300px;
+  opacity: 0.8;
 }
 
-h1{
-  text-shadow: -4px 5px 16px rgba(0,0,0,0.86);
-  color:white;
-  margin-left: 9%;
-  margin-top: 0;
-  font-size: 150px;
-  padding-left: 0;
-}
-.text-container{
-  margin-left: 9%;
+.position-thumbnail-label {
   display: flex;
+  margin-left: 6em;
+}
+
+.thumbnail {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  margin-top: 2em;
+}
+
+h1 {
+  color: #A51F26;
+  font-family: 'Rock Salt', cursive;
+  font-size: 7em;
+  font-weight: bolder;
+  line-height: 2em;
+}
+
+iframe {
+  margin-top: 2em;
 }

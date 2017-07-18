@@ -1,0 +1,45 @@
+a {
+  color: black;
+}
+
+.color {
+  color: #A51F26;
+}
+
+body {
+  background-image: url('http://www.billboard.com/files/media/the-beatles-bw-portrait-1967-billboard-1548.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70em;
+}
+
+.video {
+  box-shadow: -4px 5px 29px 16px rgba(0, 0, 0, 0.86);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+
+.position-thumbnail-label {
+  display: flex;
+  margin-left: 6em;
+}
+
+.thumbnail {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  margin-top: 2em;
+}
+
+h1 {
+  color: #A51F26;
+  font-family: 'Rock Salt', cursive;
+  font-size: 7em;
+  font-weight: bolder;
+  line-height: 2em;
+}
+
+iframe {
+  margin-top: 2em;
+}
